@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RR Technosoft — Welcome</title>
+    <meta name="description" content="RR Technosoft — 10 AM 2026 cohort, backend with AI features" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg:#0b1220; --card:#0b1320AA; --glass:#0b122033; --accent:#6ee7b7; --accent-2:#7c3aed; --muted:#9ca3af;
+      }
+      *{box-sizing:border-box}
+      html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#e6eef8}
+      body{background:linear-gradient(180deg,#061021 0%, #071428 40%, #07132a 100%);overflow-x:hidden}
+
+      /* animated technical background (SVG network + floating gradients) */
+      .bg-graphics{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.9}
+      .bg-graphics svg{width:100%;height:100%;display:block}
+      .glow{position:fixed;filter:blur(80px);opacity:0.6;mix-blend-mode:screen}
+      .glow.one{right:-10%;top:10%;width:480px;height:480px;background:radial-gradient(circle at 30% 30%, rgba(124,58,237,0.7), transparent 30%)}
+      .glow.two{left:-8%;bottom:0;width:420px;height:420px;background:radial-gradient(circle at 70% 70%, rgba(14,165,233,0.55), transparent 30%)}
+
+      .container{max-width:1100px;margin:48px auto;padding:36px;position:relative;z-index:2}
+      header{display:flex;align-items:center;gap:18px}
+      .logo{display:flex;align-items:center;gap:12px}
+      .logo-badge{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent-2),#0ea5e9);display:flex;align-items:center;justify-content:center;font-weight:800;color:white;font-size:20px;box-shadow:0 10px 30px rgba(124,58,237,0.18)}
+      h1{margin:0;font-size:34px}
+      .subtitle{color:var(--muted);margin-top:6px}
+
+      .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start;margin-top:18px}
+      .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter: blur(6px);padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 8px 40px rgba(2,6,23,0.6)}
+
+      /* people */
+      .people-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:14px}
+      .person{display:flex;gap:12px;align-items:center;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);transition:transform .18s ease,box-shadow .18s ease}
+      .person:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(2,6,23,0.6)}
+      .avatar{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#0ea5e9,#6ee7b7);display:flex;align-items:center;justify-content:center;color:#04263b;font-weight:700}
+      .name{font-weight:700}
+      .role{font-size:13px;color:var(--muted);margin-top:2px}
+
+      /* right column (backend card) */
+      .backend{position:relative}
+      .backend h3{margin:0 0 8px 0}
+      .tech-list{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+      .tech{display:flex;align-items:center;gap:10px;padding:10px;border-radius:10px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+      .chip{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--muted)}
+      .ai-badge{display:inline-flex;gap:8px;align-items:center;padding:8px;border-radius:8px;background:linear-gradient(90deg,#111827,#0b1220);box-shadow:inset 0 1px rgba(255,255,255,0.02)}
+      .ai-dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(90deg,#6ee7b7,#60a5fa);box-shadow:0 6px 18px rgba(102,126,234,0.18)}
+
+      footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+
+      @media (max-width:900px){.hero{grid-template-columns:1fr}.container{padding:20px}}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">RR</div>
+        <div>
+          <h1>RR Technosoft — Welcome Page</h1>
+          <div class="subtitle">Celebrating the 10 AM 2026 cohort</div>
+        </div>
+      </header>
+
+      <section class="card">
+        <h2>10 AM 2026 — People</h2>
+        <p class="subtitle">A (sample) list of participants in the 10 AM 2026 batch. Update as needed.</p>
+
+        <ul class="people">
+          <li>Rakesh G</li>
+          <li>Karthik</li>
+          <li>Asha</li>
+          <li>Priya</li>
+          <li>Vikram</li>
+          <li>Sneha</li>
+          <li>Arjun</li>
+          <li>Meera</li>
+        </ul>
+
+        <div class="dev">This feature is developed by <strong>Karthik</strong>.</div>
+      </section>
+
+      <footer>RR Technosoft • 10 AM 2026 • Built with care</footer>
+    </div>
+  </body>
+</html>
